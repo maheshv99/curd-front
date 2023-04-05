@@ -20,7 +20,7 @@ function CrudEdit(props) {
 		function () {
 			async function updateCrud() {
 				try {
-					const response = await get(`/api/cruds/${_id}`);
+					const response = await get(`https://curd-api-viqc.vercel.app/api/cruds/${_id}`);
 					setCrud(response.data);
 				} catch (error) {
 					console.log(error);

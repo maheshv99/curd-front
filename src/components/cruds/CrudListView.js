@@ -8,7 +8,7 @@ function CrudListView() {
 	useEffect(function () {
 		async function getCruds() {
 			try {
-				const response = await axios.get("/api/cruds");
+				const response = await axios.get("https://curd-api-viqc.vercel.app/api/cruds");
 				setCruds(response.data);
 			} catch (error) {
 				console.log("error", error);

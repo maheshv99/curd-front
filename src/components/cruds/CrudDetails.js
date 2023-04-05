@@ -12,7 +12,7 @@ function CrudDetails(props) {
 		function () {
 			async function getCrudById() {
 				try {
-					const response = await axios.get(`/api/cruds/${_id}`);
+					const response = await axios.get(`https://curd-api-viqc.vercel.app/api/cruds/${_id}`);
 					setCrud(response.data);
 				} catch (error) {
 					console.log("error", error);
